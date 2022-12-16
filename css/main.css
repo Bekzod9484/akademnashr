@@ -1,0 +1,345 @@
+@import url(./fonts.css);
+
+:root {
+    --orange: #FF7500;
+    --white: #fff;
+    --black: #000;
+    --primary-font: "Roboto";
+    --secodary-font: "RobotoCondensed";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+body {
+    font-family: var(--primary-font);
+   
+   
+}
+
+.all-btn {
+    max-width: 155px !important;
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: var(--orange);
+    color: var(--white) !important;
+    font-size: 13px;
+    letter-spacing: 0.5px !important;
+    font-weight: 700;
+    line-height: 15px;
+    display: block;
+    text-align: center;
+    text-transform: unset !important;
+    border-bottom: unset !important;
+    transition: .5s;
+}
+.all-btn:hover {
+    opacity: .6;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+    background: #252420;
+}
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    height: 5px;
+    background: var(--orange);
+}
+
+/* nav start */
+
+.nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    z-index: 200;
+}
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 15px;
+}
+.nav__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.nav__logo-image {
+    object-fit: cover;
+}
+.nav__logo-title {
+    color: #252420;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--secodary-font);
+}
+.nav__logo-title::after {
+    content: 'nashr';
+    display: inline-block;
+    color: var(--orange);
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+.nav__link {
+    color: var(--black);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.nav__link:hover {
+    border-bottom: 3px solid var(--orange);
+}
+/* nav end */
+
+
+/* header start */
+.header {
+    background: #252420;
+    position: relative;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header__image {
+    max-width: 510px;
+    width: 100%;
+    min-height: 510px;
+}
+
+.header__image-img {
+    /* width: 100%;
+    height: 100%; */
+    filter: drop-shadow(24px 24px 0px rgba(255, 117, 0, 0.6));
+    /* object-fit: cover; */
+    border-radius: 8px;
+    position: absolute;
+    top: 40px;
+  
+}
+.header__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+.header__title {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    max-width: 339px;
+    width: 100%;
+    font-family: var(--secodary-font);
+
+}
+.header__title::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--orange);
+    position: absolute;
+    top: 80px;
+}
+.header__text {
+    color: var(--white);
+    max-width: 387px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+/* header end */
+
+/* services start */
+.services {
+    padding: 150px 0;
+    position: relative;
+}
+.services__title {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    font-family: var(--secodary-font);
+    max-width: 435px;
+    width: 100%;
+}
+.services__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+   
+}
+.services__card {
+    width: 30%;
+}
+.services__card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 117, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.services__card-title {
+    margin: 32px 0 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+  
+}
+.services__title::before{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--orange);
+    position: absolute;
+    top: 15%;
+}
+.services__card-text {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+}
+/* services end */
+
+/* sale__of start */
+.sale {
+    padding-bottom: 100px;
+}
+.sale__of {
+    background: #252420;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 12px;
+   
+}
+.sale__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+   padding: 0 60px;
+}
+.sale__desc-title {
+    color: var(--white);
+    max-width: 373px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: .5px;
+    font-family: var(--secodary-font);
+}
+.sale__desc-text {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    max-width: 440px;
+    width: 100%;
+
+}
+.sale__desc-text  span {
+    color: var(--orange);
+}
+.sale__image {
+    width: 440px;
+    min-height: 440px;
+    position: relative;
+ 
+
+}
+.sale__image-img {
+    border-radius: 12px;
+    object-fit: cover;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+}
+/* sale__of end */
+
+/* footer start */
+.footer {
+    background: #F8F8F8;
+    padding: 55px 0;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__icon {
+    display: flex;
+    column-gap: 16px;
+}
+.footer__icon-link {
+    color: #252420;
+    transition: .5s;
+}
+.footer__icon-link:hover {
+    color: var(--orange);
+}
+.footer__line {
+    width: 100%;
+    height: 2px;
+    background: rgba(37, 36, 32, 0.5);
+    margin: 40px 0 60px;
+}
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+   
+}
+.footer__link {
+    color: #252420;
+    font-weight: 400;
+    font-size: 16px;
+    transition: .5s;
+}
+.footer__link:hover {
+    color: var(--orange);
+}
+/* footer end */
+
